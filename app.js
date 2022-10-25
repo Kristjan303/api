@@ -1,15 +1,19 @@
-const fetchPromise = fetch('bad-scheme://mdn.github.io/learning-area/javascript/apis/fetching-data/can-store/products.json');
+document.addEventListener(`DOMContentLoaded`, cityWeather)
 
-fetchPromise
-    .then((response) => {
-        if (!response.ok) {
-            throw new Error(`HTTP error: ${response.status}`);
-        }
-        return response.json();
-    })
-    .then((data) => {
-        console.log(data[0].name);
-    })
-    .catch((error) => {
-        console.error(`Could not get products: ${error}`);
-    });
+function weatherDataFetch(city){
+    var key = "a19f0c57c30323d6fca1351aa55b22df";
+    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid${key}`)
+        .then(function (resp) {
+            return resp.json()
+        })
+        .then(function (data) {
+            console.log(data);
+        })
+        .catch(function () {
+
+        })
+}
+
+function cityWeather(e) {
+    weatherDataFetch(`Tallinn`);
+}
