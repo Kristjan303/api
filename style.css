@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Playfair Display", "sans-serif";
+    line-height: 1.4;
+    text-align: center;
+}
+#location {
+    color: #480505;
+    padding: 0.75rem;
+    margin: 0 0.25rem;
+    background-color: #c5a6e1;
+    border-radius: 10px;
+}
+#temp {
+    color: #9a1717;
+    padding: 0.75rem;
+    margin: 0 0.25rem;
+    background-color: #bfb6cc;
+    border-radius: 10px;
+}
+#description {
+    color: #3d1616;
+    padding: 0.75rem;
+    margin: 0 0.25rem;
+    background-color: #9784b0;
+    border-radius: 10px;
+}
+#location:hover {
+    color: #d0bbbb;
+    padding: 0.75rem;
+    margin: 0 0.25rem;
+    background-color: #291044;
+}
+#temp:hover {
+    color: #dca1a1;
+    padding: 0.75rem;
+    margin: 0 0.25rem;
+    background-color: #352446;
+}
+#description:hover {
+    color: #a99393;
+    padding: 0.75rem;
+    margin: 0 0.25rem;
+    background-color: #34333a;
+}
+#weather {
+    padding: 17rem;
+    background: url("globe.png") no-repeat center center/cover;
+    background-size: 50%;
+    background-color: lightblue;
+}
+
+#github {
+    background-color: #a69393;
+    padding: 17rem;
+}
+
+#git {
+    padding: 0.75rem;
+    margin: 0 0.25rem;
+    background-color: #6c6779;
+    border-radius: 25px;
+}
+#git:hover {
+    padding: 0.75rem;
+    margin: 0 0.25rem;
+    background-color: #efe8fc;
+    border-radius: 25px;
+}
